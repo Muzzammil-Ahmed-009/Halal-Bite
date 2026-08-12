@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="D:\Halal_Bite\clearbite_app\assets\images\splash_screen_logo.png"  width="250"/>
+  <img src="assets/images/splash_screen_logo.png" width="250"/>
+
 </p>
 
 <h1 align="center">Halal Bite 🥩🔍</h1>
