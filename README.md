@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/images/splash_screen_logo.png" alt="Halal Bite logo" width="250"/>
+  <img src="assets/images/splash_logo.png" alt="Halal Bite logo" width="250"/>
 </p>
 
 <h1 align="center">Halal Bite - A Smart Dietary Scanner 🥩🔍</h1>
