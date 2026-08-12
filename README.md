@@ -1,13 +1,8 @@
 <p align="center">
-  <img src="assets/images/splash_screen_logo.png" width="250"/>
-
+  <img src="assets/images/splash_screen_logo.png" alt="Halal Bite logo" width="250"/>
 </p>
 
-<h1 align="center">Halal Bite 🥩🔍</h1>
-
-<p align="center">
-  <strong>A Smart Dietary Scanner built to empower the Muslim community with informed food choices.</strong>
-</p>
+<h1 align="center">Halal Bite - A Smart Dietary Scanner 🥩🔍</h1>
 
 <p align="center">
   <img src="screenshots/1.jpeg" width="200" alt="Home Screen"/>
