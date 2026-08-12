@@ -8,6 +8,7 @@
   <img src="screenshots/1.jpeg" width="200" alt="Home Screen"/>
   <img src="screenshots/2.jpeg" width="200" alt="Scanner Screen"/>
   <img src="screenshots/3.jpeg" width="200" alt="Profile Screen"/>
+  <img src="screenshots/4.jpeg" width="200" alt="Screenshot 4"/>
 </p>
 
 ---
@@ -87,7 +88,7 @@ We are continuously working on improving the image pre-processing pipeline and f
 ## 📱 More Screenshots
 
 <p align="center">
-  <img src="screenshots/4.jpeg" width="200" alt="Screenshot 4"/>
+  
   <img src="screenshots/5.jpeg" width="200" alt="Screenshot 5"/>
   <img src="screenshots/6.jpeg" width="200" alt="Screenshot 6"/>
   <img src="screenshots/7.jpeg" width="200" alt="Screenshot 7"/>
