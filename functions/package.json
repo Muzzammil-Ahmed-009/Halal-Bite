@@ -1,0 +1,13 @@
+{
+  "name": "halal-bite-functions",
+  "description": "Cloud Functions for Halal Bite",
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "private": true
+}

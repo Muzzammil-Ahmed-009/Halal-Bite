@@ -1,0 +1,31 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // User Profile Pictures
+    match /users/{userId}/profile_pics/{fileName} {
+      // Owner can upload/delete their picture. Max size 5MB. Must be image.
+      allow write: if isOwner(userId) 
+                   && request.resource.size < 5 * 1024 * 1024 
+                   && request.resource.contentType.matches('image/.*');
+      allow read: if isOwner(userId);
+    }
+
+    // Report Images
+    match /reports/{userId}/{fileName} {
+      // Owner can upload report evidence. Max size 10MB. Must be image.
+      allow create: if isOwner(userId)
+                    && request.resource.size < 10 * 1024 * 1024 
+                    && request.resource.contentType.matches('image/.*');
+      allow read, update, delete: if false; // Only admins can view reports
+    }
+  }
+}

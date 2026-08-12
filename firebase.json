@@ -1,0 +1,34 @@
+{
+  "functions": {
+    "source": "functions"
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "halal-scanner-ai-67e91",
+          "appId": "1:172553043874:android:4c516a4686a1e8be9d7cfb",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "halal-scanner-ai-67e91",
+          "configurations": {
+            "android": "1:172553043874:android:4c516a4686a1e8be9d7cfb",
+            "ios": "1:172553043874:ios:bdcb33cefae4557a9d7cfb",
+            "macos": "1:172553043874:ios:bdcb33cefae4557a9d7cfb",
+            "web": "1:172553043874:web:28ecefcec41147de9d7cfb",
+            "windows": "1:172553043874:web:af8415c89f4b50829d7cfb"
+          }
+        }
+      }
+    }
+  }
+}

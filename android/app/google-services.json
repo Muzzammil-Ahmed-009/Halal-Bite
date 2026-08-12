@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "172553043874",
+    "project_id": "halal-scanner-ai-67e91",
+    "storage_bucket": "halal-scanner-ai-67e91.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172553043874:android:4c516a4686a1e8be9d7cfb",
+        "android_client_info": {
+          "package_name": "com.clearbite.clearbite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172553043874-h4kdgrvqmocjbupb1ei77teeugjcv4e4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.clearbite.clearbite",
+            "certificate_hash": "a852cb10e68e83375f7dc6e4ad4dfad50c2220f4"
+          }
+        },
+        {
+          "client_id": "172553043874-qbp13k5an88iargrnfnpeicclntvvrnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKAO5-cJHJ8Q84nHAp1q0fYnGfITf-gmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "172553043874-qbp13k5an88iargrnfnpeicclntvvrnj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "172553043874-4b8ltbt2e6l1lqg55m1q2g9am9no6ep3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.clearbite.clearbite"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

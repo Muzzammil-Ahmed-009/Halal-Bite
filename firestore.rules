@@ -1,0 +1,38 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // App config & Ingredients (read-only for all users)
+    match /app_config/{document=**} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /ingredients/{document=**} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // User data (only the authenticated owner can read/write their own data)
+    match /users/{userId} {
+      allow read, write: if isOwner(userId);
+      match /{document=**} {
+        allow read, write: if isOwner(userId);
+      }
+    }
+
+    // Community Reports
+    match /reports/{reportId} {
+      // Users can submit reports, but only backend/admins can read or delete them
+      allow create: if isAuthenticated() && request.resource.data.userId == request.auth.uid;
+      allow read, update, delete: if false; 
+    }
+  }
+}
